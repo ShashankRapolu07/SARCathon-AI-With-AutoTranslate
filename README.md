@@ -83,7 +83,7 @@ The FAQ matching process ensures users receive relevant answers quickly. Here's 
      - If the language is not English, it records the detected language for later translation.
      - Supports English, Hindi, Spanish, and German currently.
 
-3. **Query Translation (*if necessary)**
+3. **Query Translation (\*if necessary)**
    - **Translation to English:** If the query is in a different language, the back-end translates it to English using the Google Cloud Translate API.
    - **Purpose:** The embedding model is optimized for English, so translation ensures accurate processing.
 
@@ -102,7 +102,7 @@ The FAQ matching process ensures users receive relevant answers quickly. Here's 
    - **Fetching Results:** Pinecone returns the matching FAQs along with their metadata (question, answer, category).
    - The retrieved results are sorted based on the cosine-similarity score.
 
-7. **Translating FAQs Back to User's Language (*if necessary)**
+7. **Translating FAQs Back to User's Language (\*if necessary)**
    - **Check Detected Language:** If the original query was not in English, the back-end translates the retrieved FAQs back into the user's language, especially the questions/answers contained in the metadata.
    - **Batch Translation:** Questions and answers are translated in batches using the Google Cloud Translate API to improve efficiency.
      - This makes the translation process faster and efficient, reducing the I/O response time for the user query and also making the application robust to scaling in case of gigantic FAQ data.
