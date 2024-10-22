@@ -9,11 +9,11 @@ The Smart FAQ Module is a FAQ-retrieval system designed to improve the user expe
    - Uses Attention Mechanism to capture contextually similar FAQs ensuring users receive the most relevant answers.
 
 2. **Real-Time Search with Fast Responses:**
-   - Utilizes Pinecone Vector Database for quick and efficient searches, ensuring minimal latency.
+   - Utilized [Pinecone Vector Database](https://www.pinecone.io/) for quick and efficient searches, ensuring minimal latency.
    - Capable of handling numerous concurrent requests without degradation in performance.
 
 3. **Multilingual Support:**
-   - Automatically detects the language of the user’s query using Google Cloud Translation API.
+   - Automatically detects the language of the user’s query using [Google Cloud Translation API](https://cloud.google.com/translate/docs/reference/rest/).
    - SARAS AI being a global institute, the inclusion of multi-lingual support broadens the reach to non-English speaking users, enhancing inclusivity and user satisfaction.
 
 4. **Scalability:**
@@ -30,13 +30,13 @@ The Smart FAQ Module is a FAQ-retrieval system designed to improve the user expe
 
 ## Installation and Setup
 Before starting, make sure you have the following installed and set up:
-1. **Node.js and npm Installation:** [click here](#)
-2. **Python Installation:** [click here](#)
-3. **Pinecone Account Setup:** [click here](#)
-4. **Google Cloud Translate API Setup:** [click here](#)
+1. **Node.js and npm Installation:** [click here](https://www.youtube.com/watch?v=EIzdQxMXcrc&pp=ygUcTm9kZS5qcyBhbmQgTlBNIGluc3RhbGxhdGlvbg%3D%3D)
+2. **Python Installation:** [click here](https://www.youtube.com/watch?v=ExJHGEn6gt0&ab_channel=AmitThinks)
+3. **Pinecone Account Setup:** [click here](https://docs.pinecone.io/guides/get-started/quickstart)
+4. **Google Cloud Translate API Setup:** [click here](https://www.youtube.com/watch?v=l2TlFyXmiBQ&feature=youtu.be)
 
 ### Step 1: Clone this GitHub Repository
-Follow this link for a general tutorial.
+Follow [this link](https://www.youtube.com/watch?v=EhxPBMQFCaI&feature=youtu.be) for a general tutorial.
 
 ### Step 2: Setting Up the Frontend
 1. From the root directory, navigate to the `/frontend` directory: `cd frontend`
@@ -50,7 +50,7 @@ Follow this link for a general tutorial.
 > **Note:** Make sure you are connected to the Internet before starting the backend server.
 1. From the root directory, navigate to the `/backend` directory: `cd backend`
 2. Install Backend Dependencies: `pip install -r requirements.txt`
-   - **NOTE:** You might get a LongPath issue during the installation of the `sentence-transformers` library. If this is the case, watch this tutorial on how to solve this issue.
+   - **NOTE:** You might get a LongPath issue during the installation of the `sentence-transformers` library. If this is the case, [watch this tutorial](https://www.youtube.com/watch?v=JIBsJx7U0Xw&ab_channel=MDTechVideos) on how to solve this issue.
 3. Configure Environment Variables:
    - Create a `.env` file inside the `backend/` directory with the following variables:
      - `PINECONE_API_KEY="your_pinecone_api_key"`
