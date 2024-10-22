@@ -18,7 +18,7 @@ The Smart FAQ Module is a FAQ-retrieval system designed to improve the user expe
 
 4. **Scalability:**
    - Code is organized in a way that makes it easy to add new features and functionality.
-   - Leverages cloud services like Pinecone (vector database) and Google Cloud (translation API), making it robust to scaling as needed.
+   - Leverages cloud services like **Pinecone** (vector database) and **Google Cloud** (translation API), making it robust to scaling as needed.
 
 5. **Responsive User-Interface:**
    - UI is designed in such a way to make it compatible with different screen sizes (laptops/tables/mobiles, etc.).
@@ -134,12 +134,12 @@ You can test the multi-lingual feature in our application by directly typing the
 ## Performance and Scalability
 
 ### Why Traditional NoSQL/SQL Databases are Slow and Inefficient?
-Traditional NoSQL/SQL databases like MongoDB, Firebase, etc., rely upon Exact Document Matching Search for data retrieval. If the FAQ dataset is large (>1 million parameters), we need to fetch the entire data into the local machine and perform similarity search using Cosine-Similarity/Euclidean-Distance. This makes relevant FAQ retrieval extremely slow and inefficient.
+Traditional NoSQL/SQL databases like MongoDB, Firebase, etc., rely upon **Exact Document Matching Search** for data retrieval. If the FAQ dataset is large (>1 million parameters), we need to fetch the entire data into the local machine and perform similarity search using Cosine-Similarity/Euclidean-Distance. This makes relevant FAQ retrieval extremely slow and inefficient.
 
 ### How Vector Databases are Faster and Efficient?
-Instead of performing a similarity search with respect to all the FAQs in the database (like SQL/NoSQL databases), Vector Databases (like Pinecone) use ingenious techniques for comparing user queries only with closely-related FAQs. This is enabled by the usage of special data structures called Hierarchical Navigable Small World (HNSW) graphs, which store vector embeddings and metadata in an eccentric way. The search mechanism is called Approximate Nearest Neighbor Search (ANN), where the user embedding is queried only with its nearest neighbors (stored vector embeddings).
+Instead of performing a similarity search with respect to all the FAQs in the database (like SQL/NoSQL databases), Vector Databases (like **Pinecone**) use ingenious techniques for comparing user queries only with closely-related FAQs. This is enabled by the usage of special data structures called **Hierarchical Navigable Small World (HNSW) graphs**, which store vector embeddings and metadata in an eccentric way. The search mechanism is called **Approximate Nearest Neighbor Search (ANN)**, where the user embedding is queried only with its nearest neighbors (stored vector embeddings).
 
 #### Approximate Nearest Neighbor (ANN) Search:
-Pinecone Vector Database has an efficient search mechanism that is robust to scaling. It uses a type of Approximate Nearest Neighbor Search (ANN) called Hierarchical Navigable Small World (HNSW) for faster and efficient retrieval of closest FAQ data. Even if the FAQ dataset is large (>1 million FAQs), this mechanism enables comparing the reference embedding only with its closest neighbors in the database. In Pinecone, the `ef` argument inside the `index.query()` method controls the number of nearest neighbors to compute similarity scores with.
+Pinecone Vector Database has an efficient search mechanism that is robust to scaling. It uses a type of **Approximate Nearest Neighbor Search (ANN)** called **Hierarchical Navigable Small World (HNSW)** for faster and efficient retrieval of closest FAQ data. Even if the FAQ dataset is large (>1 million FAQs), this mechanism enables comparing the reference embedding only with its closest neighbors in the database. In Pinecone, the `ef` argument inside the `index.query()` method controls the number of nearest neighbors to compute similarity scores with.
 
 > **NOTE:** As the FAQ dataset (`faqs.json`) is small in our case, we compared the user query with all the FAQ embeddings to not compromise on retrieval accuracy.
