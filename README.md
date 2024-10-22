@@ -70,6 +70,8 @@ Follow [this link](https://www.youtube.com/watch?v=EhxPBMQFCaI&feature=youtu.be)
 
 > **NOTE:** Until the hackathon deadline, we are giving you the APIs for quicker setup and ease of access. These are temporary and will be removed post-hoc.
 
+> **NOTE:** To use Multi-Lingual feature, you must generate your own Google Cloud Translation API key. Otherwise, this application doesn't work.
+
 ## FAQ Matching Process (Step-by-Step)
 The FAQ matching process ensures users receive relevant answers quickly. Here's how it works, step-by-step:
 
