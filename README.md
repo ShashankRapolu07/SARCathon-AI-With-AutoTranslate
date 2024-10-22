@@ -39,7 +39,7 @@ Before starting, make sure you have the following installed and set up:
 Follow [this link](https://www.youtube.com/watch?v=EhxPBMQFCaI&feature=youtu.be) for a general tutorial.
 
 ### Step 2: Setting Up the Frontend
-1. From the root directory, navigate to the `/frontend` directory: `cd frontend`
+1. From the root directory, navigate to the `/frontend` directory using: `cd frontend`
 2. Install Frontend Dependencies: `npm install`
 3. Configure Environment Variables:
    - Create a `.env` file inside the `frontend/` directory with the following variables:
@@ -50,7 +50,7 @@ Follow [this link](https://www.youtube.com/watch?v=EhxPBMQFCaI&feature=youtu.be)
 > **Note:** Make sure you are connected to the Internet before starting the backend server.
 1. From the root directory, navigate to the `/backend` directory: `cd backend`
 2. Install Backend Dependencies: `pip install -r requirements.txt`
-   - **NOTE:** You might get a LongPath issue during the installation of the `sentence-transformers` library. If this is the case, [watch this tutorial](https://www.youtube.com/watch?v=JIBsJx7U0Xw&ab_channel=MDTechVideos) on how to solve this issue.
+   - **NOTE:** You might get a LongPath issue (in Windows) during the installation of the `sentence-transformers` library. If this is the case, [watch this tutorial](https://www.youtube.com/watch?v=JIBsJx7U0Xw&ab_channel=MDTechVideos) on how to solve this issue.
 3. Configure Environment Variables:
    - Create a `.env` file inside the `backend/` directory with the following variables:
      - `PINECONE_API_KEY="your_pinecone_api_key"`
