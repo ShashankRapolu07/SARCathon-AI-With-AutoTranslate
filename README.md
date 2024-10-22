@@ -142,7 +142,7 @@ Instead of performing a similarity search with respect to all the FAQs in the da
 #### Approximate Nearest Neighbor (ANN) Search:
 Pinecone Vector Database has an efficient search mechanism that is robust to scaling. It uses a type of Approximate Nearest Neighbor Search (ANN) called Hierarchical Navigable Small World (HNSW) for faster and efficient retrieval of closest FAQ data. Even if the FAQ dataset is large (>1 million FAQs), this mechanism enables comparing the reference embedding only with its closest neighbors in the database. In Pinecone, the `ef` argument inside the `index.query()` method controls the number of nearest neighbors to compute similarity scores with.
 
-> **NOTE:** As the FAQ dataset (`faqs.json`) is small in our case, we will compare the user query with all the FAQ embeddings to not compromise on retrieval accuracy.
+> **NOTE:** As the FAQ dataset (`faqs.json`) is small in our case, we compared the user query with all the FAQ embeddings to not compromise on retrieval accuracy.
 
 ## Real-Time Deployment: Our Application
 We have deployed our application in real-time for ease of access and direct testing. You can go through this link: [deployed link](#)
