@@ -1,4 +1,4 @@
-# AI-Enabled Smart FAQ Module
+# AI-Enabled Smart FAQ Module (With Translation)
 
 ## Overview
 The Smart FAQ Module is a FAQ-retrieval system designed to improve the user experience on the SARAS AI Institute website. It helps users find the answers they need by intelligently understanding their questions and showing the most relevant FAQs by leveraging AI capabilities.
