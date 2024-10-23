@@ -123,7 +123,7 @@ The attention mechanism in the Smart FAQ Module helps the system better understa
 
 We used the `all-MiniLM-L6-v2` Transformer model from the `SentenceTransformer` library for this attention-enabled FAQ retrieval.
 
-## Multi-Lingual Support (Additional Feature)
+## AutoTranslate (Multi-Lingual Support)
 Adding multilingual support to the Smart FAQ Module makes user experience even better, as SARAS AI is a global platform. By supporting multiple languages, the FAQ system makes it easier for non-English speakers to find information in their own language. Our application can automatically detect the language the user types in and gives responses in that same language. This means users don’t need to choose their language manually, making it easier for them to get the answers they need. Since SARAS AI Institute is a global platform, this helps people from different countries who may not speak English, making the platform more user-friendly and accessible to everyone.
 
 ### Testing:
