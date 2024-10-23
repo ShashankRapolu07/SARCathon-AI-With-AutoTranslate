@@ -145,3 +145,35 @@ Instead of performing a similarity search with respect to all the FAQs in the da
 Pinecone Vector Database has an efficient search mechanism that is robust to scaling. It uses a type of **Approximate Nearest Neighbor Search (ANN)** called **Hierarchical Navigable Small World (HNSW)** for faster and efficient retrieval of closest FAQ data. Even if the FAQ dataset is large (>1 million FAQs), this mechanism enables comparing the reference embedding only with its closest neighbors in the database. In Pinecone, the `ef` argument inside the `index.query()` method controls the number of nearest neighbors to compute similarity scores with.
 
 > **NOTE:** As the FAQ dataset (`faqs.json`) is small in our case, we compared the user query with all the FAQ embeddings to not compromise on retrieval accuracy.
+
+## Our Application Snapshots
+
+#### UI Design:
+
+| At Scroll Position 0 | At Scroll Position X|
+|---------------------------------|---------------------------------|
+| ![UI Design at 0 Scroll Position](1-UI%20Design%201.png) | ![UI Design at X Scroll Position](1-UI%20Design%202.png) |
+
+#### Intelligent FAQ Retrieval:
+
+| User Query 1 | User Query 2 |
+|---------------------------------|---------------------------------|
+| ![UI Design at X Scroll Position](2-FAQ%20Retrieval%20Testing%202.png) | ![UI Design at 0 Scroll Position](2-FAQ%20Retrieval%20Testing%201.png) |
+
+#### Responsive Design:
+
+| At Scroll Position 0 | At Scroll Position X |
+|---------------------------------|---------------------------------|
+| ![UI Design at 0 Scroll Position](3-Responsive%20Design%201.png) | ![UI Design at X Scroll Position](3-Responsive%20Design%202.png) |
+
+#### Multi-Lingual Support:
+
+| Spanish | German |
+|---------------------------------|---------------------------------|
+| ![UI Design at 0 Scroll Position](4-AutoTranslate%201.png) | ![UI Design at X Scroll Position](4-AutoTranslate%202.png) |
+
+#### AutoTranslate Feature:
+
+| Spanish |
+|---------------------------------|
+| ![UI Design at 0 Scroll Position](4-AutoTranslate%203.gif) |
