@@ -70,7 +70,7 @@ Follow [this link](https://www.youtube.com/watch?v=EhxPBMQFCaI&feature=youtu.be)
 
 > **NOTE:** Until the hackathon deadline, we are giving you our Pinecone Vector DB API for quicker setup and ease of access. This is temporary and will be removed post-hoc.
 
-> **NOTE:** To use the **AutoTranslate** feature, you must generate your own Google Cloud Translation API key. Otherwise the application doesn't work.
+> **NOTE:** To use the **AutoTranslate** feature, you must generate your own **Google Cloud Translation API** key. Otherwise the application doesn't work.
 
 ## FAQ Matching Process (Step-by-Step)
 The FAQ matching process ensures users receive relevant answers quickly. Here's how it works, step-by-step:
