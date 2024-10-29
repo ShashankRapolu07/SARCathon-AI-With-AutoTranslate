@@ -1,4 +1,4 @@
-# AI-Enabled Smart FAQ Module (With AutoTranslate)
+# AI-Enabled Smart FAQ Module (with AutoTranslate)
 
 > For our same application without the **AutoTranslate** feature $\rightarrow$ visit [this GitHub repository](https://github.com/ShashankRapolu07/SARCathon-AI.git).
 
