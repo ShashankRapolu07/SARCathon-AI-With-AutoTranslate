@@ -70,7 +70,7 @@ Follow [this link](https://www.youtube.com/watch?v=EhxPBMQFCaI&feature=youtu.be)
 ### Step 6:
 - Start the FastAPI server using uvicorn: `python -m uvicorn main:app --reload`
 
-> **NOTE:** Until the hackathon deadline, we are giving you our Pinecone Vector DB API for quicker setup and ease of access. This is temporary and will be removed post-hoc.
+> **NOTE:** Until the hackathon deadline, we are giving you our Pinecone Vector DB API for quicker setup and ease of access. This is temporary and will be removed post-hoc. UPDATE: API key removed.
 
 > **NOTE:** To use the **AutoTranslate** feature, you must generate your own **Google Cloud Translation API** key. Otherwise the application doesn't work.
 
